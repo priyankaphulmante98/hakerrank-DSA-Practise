@@ -1,1 +1,0 @@
-# hakerrank-problem-javascript-solution
