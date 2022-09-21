@@ -1,0 +1,22 @@
+function breakingRecords(scores) {
+    // Write your code here
+     let best = 0;
+    let worst = 0;
+    let bestScore = scores[0];
+    let worstScore = scores[0];
+    const lengthOfData = scores.length;
+    for(let p = 1; p < scores.length; p++) {
+        if (scores[p] > bestScore) {
+            bestScore = scores[p];
+            best++;
+            continue;
+        }
+        if (scores[p] < worstScore) {
+            worstScore = scores[p]
+            worst++;
+            continue;
+        }
+    }
+    return [best, worst];
+
+}
